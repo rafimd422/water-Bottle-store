@@ -1,0 +1,30 @@
+
+.bottleContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bottle {
+border: 2px solid aliceblue;
+width: 250px;
+height: fit-content;
+padding: 18px;
+text-align: center;
+}
+.bottle img{
+width: 200px;
+}
+
+.cartContainer {
+display: flex;
+justify-content: center;
+gap: 0.8rem;
+flex-wrap: wrap;
+}
+.cartContainer img {
+width: 200px;
+margin: 8px;
+}
