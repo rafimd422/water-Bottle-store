@@ -28,3 +28,18 @@ flex-wrap: wrap;
 width: 200px;
 margin: 8px;
 }
+.cart {
+ display: flex;
+ flex-direction: column; 
+}
+
+.cart button{
+ width: 6rem;
+ margin: 0 auto;
+ padding: 0.6rem;
+ border-radius: 5px;
+ background-color: rgb(29, 34, 34);
+ color: aliceblue;
+ font-weight: 800; 
+ margin-bottom: 0.4rem;
+}

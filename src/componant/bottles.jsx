@@ -23,11 +23,17 @@ const handleCart = bottle => {
     setCart(insideCart)
     localStorage.setItem('cart', JSON.stringify(insideCart))
 }
+const handleRemove = (bottleId) => {
+  const updatedCart = cart.filter((item) => item.id !== bottleId);
+  setCart(updatedCart);
+  localStorage.setItem('cart', JSON.stringify(updatedCart));
+};
+
   return (
     <div>
       <h2>Bottles: {bottles.length}</h2>
-      <Cart cart={cart} />
-      <div className='bottleContainer'>
+      <Cart handleRemove={handleRemove} cart={cart} />
+      <div className='bottleContainer'> 
       {bottles.map(bottle=><Bottle handleCart ={handleCart} key= {bottle.id} bottle = {bottle}></Bottle>)}
     </div>
     </div>
